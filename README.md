@@ -15,6 +15,18 @@ some map elements, such as legend, scale bar, credit; (8 points)
 
 write up a project description in the readme.md file. This file will introduce the project name, a brief introduction, the major functions(especially the function which was not covered in the lectures), libraries, data sources, credit, acknowledgement, and other necessary information. (8 points)
 
+The project name is Airports in the United States. 
+
+This is a scaleable map in CRS WGS-84 projection. 
+The functions include a string that queries the data to see if there is a control tower present at the airport. 
+the source of united states base map comes from geojson files from Mike Bostock of D3.  
+
+https://catalog.data.gov/dataset/usgs-small-scale-dataset-airports-of-the-united-states-201207-shapefile.
+
+Mapbox was used to combine the layers into a single interactive map. 
+
+
+
 you will need to synchronize this project to a github repository. And make sure the web map is accessible from a url link, which should be similar to http://[your_github_username].github.io/[your_repository_name]/index.html. (To do that, you may want to check out previous lecture or lab handouts on how to host repository on github pages.); (6 points)
 
 Note: Please make sure the name of your repository is NOT lab03 or similiar, use a name which can describe the theme of the map you will make. Think about that, which one do you prefer? - showing your future employer or Ph.D. admission committee a lot of course work on github or a list of professional projects.
