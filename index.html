@@ -23,6 +23,16 @@ const map = new mapboxgl.Map({
   center: [-89.383171, 37.162223],
   zoom: 3.4
 });
+ {
+  legendControl: {
+    position: 'topright'
+  }
+}).setView([-89.383171, 37.162223], 1);
+
+var myLayer = L.mapbox.featureLayer().addTo(map);
+myLayer.setGeoJSON(geojson);
+
+map.legendControl.addLegend('<strong>Airports in the U.S.</strong>');
 </script>
 
 </body>
