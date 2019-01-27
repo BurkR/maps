@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset='utf-8' />
-  <title>Display a map</title>
+  <title>Airports in the U.S.</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
@@ -13,10 +13,9 @@
   </style>
 </head>
 <body>
-
 <div id='map'></div>
 <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiYnVya3IiLCJhIjoiY2pyM3o2bDQ5MDIxNzRhbTMyeWRsb2RldiJ9.q8kfMI-VtINfQSIwUkxczg';
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYnVya3IiLCJhIjoiY2pyM3o2bDQ5MDIxNzRhbTMyeWRsb2RldiJ9.q8kfMI-VtINfQSIwUkxczg';
 const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/burkr/cjrctl0hs33et2sqgq71128o7',
@@ -32,8 +31,7 @@ var geojson = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -x,
-          y
+          -x, y
         ]
       },
       "properties": {}
@@ -71,17 +69,14 @@ var geojson = {
     }
   ]
 };
-
 var map = L.mapbox.map('map', '', {
   scrollWheelZoom: false,
   legendControl: {
     position: 'topright'
   }
 }).setView([38.8929, -77.0252], 14);
-
 var myLayer = L.mapbox.featureLayer().addTo(map);
 myLayer.setGeoJSON(geojson);
-
 map.legendControl.addLegend('<strong>Airport Map</strong>');
 </script>
 </body>
