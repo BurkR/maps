@@ -17,7 +17,6 @@ write up a project description in the readme.md file. This file will introduce t
 
 The project name is a scaleable map entitled: "Airports of the United States". 
 
-
 Two map layers were used including a United States base map and a map of airports across the United States. One of the fields in the airport layer was control towers, named: CTRL_TRS. This field was used to indicate  whether the airport had a control tower or not. Therefore a Javascript function was added, within MapBox layer panel, to indicate the presence of a tower on the map with a "Y" for yes and a "N" for no.  
 
 Methods for this project include: 
