@@ -1,6 +1,6 @@
 // 1. Create a map object.
 var mymap = L.map('map', {
-    center: [44.13, -119.93],
+    center: [37.162223, -89.383171],
     zoom: 7,
     maxZoom: 10,
     minZoom: 3,
