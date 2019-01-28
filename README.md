@@ -15,11 +15,18 @@ some map elements, such as legend, scale bar, credit; (8 points)
 
 write up a project description in the readme.md file. This file will introduce the project name, a brief introduction, the major functions(especially the function which was not covered in the lectures), libraries, data sources, credit, acknowledgement, and other necessary information. (8 points)
 
-The project name is Airports in the United States. 
+The project name is a scaleable map entitled: "Airports of the United States". 
 
-This is a scaleable map in CRS WGS-84 projection. 
-The functions include a string that queries the data to see if there is a control tower present at the airport. 
-the source of united states base map comes from geojson files from Mike Bostock of D3.  
+
+Two map layers were used including a United States base map and a map of airports across the United States. One of the fields in the airport layer was control towers, named: CTRL_TRS. This field was used to indicate on the final map, whather the airport had a control tower or not. Therefore a Javascript function was added to indicate the presence of a tower on the map with a "Y" for yes and a "N" for no.  
+
+Methods for this project include: 
+The map projection was updated to CRS: WGS-84 projection using QGIS. The file was added to QGIS as a layer. Under the layer properties the projection was changed as well as a few other attributes to make the U.S. Layer compatible with a web environment. The number of digits in the coordinates was reduced from 15 characters to 10 characters to make the data load efficiently on the webpage. 
+
+
+The source of united states base map and the distribution of airports came from Professor Zhao, who downloaded the maps from Mike Bostock of D3 in the form of geojson files. The map elements were combined in MapBox including the color scheme and the icons were created with the help of all maki icons. 
+
+
 
 https://catalog.data.gov/dataset/usgs-small-scale-dataset-airports-of-the-united-states-201207-shapefile.
 
