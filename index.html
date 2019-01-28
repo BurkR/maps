@@ -12,9 +12,18 @@ body { margin:0; padding:0; }
 #map { position:absolute; top:0; bottom:0; width:100%; }
 </style>
 </head>
-
 <div id='map'></div>
-
+<script>
+    // 1. Create a map object.
+    var mymap = L.map('map', {
+        center: [44.13, -119.93],
+        zoom: 7,
+        maxZoom: 10,
+        minZoom: 3,
+        detectRetina: true // detect whether the sceen is high resolution or not.
+    });
+    // 2. Add a base map.
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
 <script>
   legend.onAdd = function () {return div;
 };
