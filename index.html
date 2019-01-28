@@ -6,7 +6,15 @@
   <title>Airports in the U.S.</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+  <script src='js/main.js'></script>
+    <script src='js/legend.js'></script>
+    <style>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/styles.css"/>
+   <link rel="stylesheet" href="css/legend.css"/>
+    </style>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+</head>
   <style>
 #map { position:absolute; top:0; bottom:0; width:100%; }
      body { margin:0; padding:0; }
@@ -18,14 +26,13 @@
 <script>
     // 1. Create a map object.
     var mymap = L.map('map', {
-        center: [44.13, -119.93],
+        center: [37.162223, -89.383171], 
         zoom: 7,
         maxZoom: 10,
         minZoom: 3,
         detectRetina: true // detect whether the sceen is high resolution or not.
     });
-    // 2. Add a base map.
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
+    
 <script>
   legend.onAdd = function () {return div;
 };
