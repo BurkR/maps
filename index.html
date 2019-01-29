@@ -9,47 +9,33 @@
   <script src='js/main.js'></script>
     <script src='js/legend.js'></script>
     <style>
-<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="css/styles.css"/>
    <link rel="stylesheet" href="css/legend.css"/>
     </style>
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    // 11. Add a legend to map
+legend.addTo(mymap);
+  legend.onAdd = function () {return div;
+};
+  </script>
+  
 </head>
   <style>
 #map { position:absolute; top:0; bottom:0; width:100%; }
      body { margin:0; padding:0; }
 </style>
 </head>
-  
-<body>
+  <body>
 <div id='map'></div>
-<script>
-    // 1. Create a map object.
-    var mymap = L.map('map', {
-        center: [37.162223, -89.383171], 
-        zoom: 7,
-        maxZoom: 10,
-        minZoom: 3,
-        detectRetina: true // detect whether the sceen is high resolution or not.
-    });
-    
-<script>
-  legend.onAdd = function () {return div;
-};
-  
-  // 11. Add a legend to map
-legend.addTo(mymap);
-
-// 12. Add a scale bar to map
-L.control.scale({position: 'bottomleft'}).addTo(mymap);
-  
-mapboxgl.accessToken = 'pk.eyJ1IjoiYnVya3IiLCJhIjoiY2pyM3o2bDQ5MDIxNzRhbTMyeWRsb2RldiJ9.q8kfMI-VtINfQSIwUkxczg';
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+   mapboxgl.accessToken = 'pk.eyJ1IjoiYnVya3IiLCJhIjoiY2pyM3o2bDQ5MDIxNzRhbTMyeWRsb2RldiJ9.q8kfMI-VtINfQSIwUkxczg';
 const map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/burkr/cjrctl0hs33et2sqgq71128o7',
 center: [-89.383171, 37.162223],
 zoom: 3.4
 });
-</script>
+  // 12. Add a scale bar to map
+L.control.scale({position: 'bottomleft'}).addTo(mymap);
 </body>
 </html>
