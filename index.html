@@ -4,38 +4,68 @@
 <head>
   <meta charset='utf-8' />
   <title>Airports in the U.S.</title>
-  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
-  <script src='js/main.js'></script>
+    <script src='js/main.js'></script>
     <script src='js/legend.js'></script>
-    <style>
   <link rel="stylesheet" href="css/styles.css"/>
-   <link rel="stylesheet" href="css/legend.css"/>
-    </style>
-    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
-    // 11. Add a legend to map
-legend.addTo(mymap);
-  legend.onAdd = function () {return div;
-};
-  </script>
-  
-</head>
+   
   <style>
 #map { position:absolute; top:0; bottom:0; width:100%; }
      body { margin:0; padding:0; }
 </style>
+  
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    // 11. Add a legend to map
+legend.addTo(mymap);
+  legend.onAdd = function () {return div;
+};
+    </script>
+  
+  <--beginning of mapbox code-->
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+<style>
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
 </head>
-  <body>
+<body>
+ 
 <div id='map'></div>
-  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
-   mapboxgl.accessToken = 'pk.eyJ1IjoiYnVya3IiLCJhIjoiY2pyM3o2bDQ5MDIxNzRhbTMyeWRsb2RldiJ9.q8kfMI-VtINfQSIwUkxczg';
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYnVya3IiLCJhIjoiY2pyM3o2bDQ5MDIxNzRhbTMyeWRsb2RldiJ9.q8kfMI-VtINfQSIwUkxczg';
 const map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/burkr/cjrctl0hs33et2sqgq71128o7',
 center: [-89.383171, 37.162223],
 zoom: 3.4
 });
-  // 12. Add a scale bar to map
+</script>
+ <--end of mapbox code-->
+   
+      // 11. Add a legend to map
+legend.addTo(mymap);
+  legend.onAdd = function () {return div;
+};
+ 
+// 12. Add a scale bar to map
 L.control.scale({position: 'bottomleft'}).addTo(mymap);
 </body>
 </html>
+  
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+  
+    
+
