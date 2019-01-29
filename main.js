@@ -7,8 +7,6 @@ var mymap = L.map('map', {
     detectRetina: true});
 
 
-
-
 // Get GeoJSON and put on it on the map when it loads
 //cellTowers= L.geoJson.ajax("assets/airports.geojson", {
     // assign a function to the onEachFeature parameter of the cellTowers object.
