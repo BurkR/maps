@@ -7,16 +7,16 @@ This is a shapefile coverage of Oregon Ecoregions.  This map was created in a co
 forestland.zip |  downloaded zip file 6,407 KB
 forestland.shp files (unzipped shape files) | 15,190 KB
 forestland.geojson file-in wgs84 projection from QGIS | 24,843 KB 
-forestland_reduced.geojson (reduced in mapshaper.org) | 9.1 KB
+forestland_reduced.json.txt (reduced in mapshaper.org) | 9.1 KB
 
 
 In the assets folder of this repo, please upload the two json files. So, the structure of this repository should be:
 
-[burkr.github.io/maps]
+[burkr.github.io/maps/]
     │readme.md
     ├─assets
     │      forestland.geojson 
-    │      forestland_reduced.geojson
+    │      forestland_reduced.json.txt 
     │      
 
 
