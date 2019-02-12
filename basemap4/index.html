@@ -1,0 +1,33 @@
+="utf-8">
+	<title>Leaflet/MapBox BaseMap for Lab 4</title>
+  <!-- External Stylesheets -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script> 
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+  <style>
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+  <div id="map" style="width: 80%; height: 80%"></div>
+    <!-- Our web map and content will go here -->
+
+  <script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYnVya3IiLCJhIjoiY2pyM3o2bDQ5MDIxNzRhbTMyeWRsb2RldiJ9.q8kfMI-VtINfQSIwUkxczg';
+const map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/burkr/cjrtiidap18tq1gqe3qtent1s',
+center: [-114.577507, 45.547090],
+zoom: 5.3
+});
+</script>
+  <!-- Add the Leaflet JavaScript library -->
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <script>
+    // Add MapBox tile layer to map element
+          L.tileLayer('https://api.mapbox.com/styles/v1/burkr/cjrtiidap18tq1gqe3qtent1s.html?fresh=true&title=true&access_token=pk.eyJ1IjoiYnVya3IiLCJhIjoiY2pyM3o2bDQ5MDIxNzRhbTMyeWRsb2RldiJ9.q8kfMI-VtINfQSIwUkxczg#5.3/45.547090/-114.577507/0) { attribution: 'MapBox' }.addTo(map);
+</script>
+  </body>
+</html>
