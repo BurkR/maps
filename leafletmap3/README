@@ -1,0 +1,14 @@
+https://burkr.github.io/maps/leafletmap3/index.html
+
+Quiz 3: The tile set was created using MapBox with the help of Leaflet.  
+
+The main geographic area of my study and map is Western Washington and Western Oregon to the crest of the Cascades. 
+
+The Zoom level selected was 15.
+
+ The structure of this repository:
+
+[BurkR.github.io/maps/leafletmap3]
+    │readme.md
+    │index.html
+    ├─All the links to the index page for this map are external on Mapbox and Leaflet!
