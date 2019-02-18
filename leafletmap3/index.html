@@ -6,6 +6,12 @@
   <!-- External Stylesheets -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	 <!-- Add the Leaflet JavaScript library -->
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <script>
+    // Add MapBox tile layer to map element
+          L.tileLayer('https://api.mapbox.com/styles/v1/burkr/cjrtiidap18tq1gqe3qtent1s.html?fresh=true&title=true&access_token=pk.eyJ1IjoiYnVya3IiLCJhIjoiY2pyM3o2bDQ5MDIxNzRhbTMyeWRsb2RldiJ9.q8kfMI-VtINfQSIwUkxczg#5.3/45.547090/-114.577507/0) { attribution: 'MapBox and Cali Terrain by AMY LEE WALTON' }.addTo(map);
+</script>
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script> 
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
   <style>
@@ -24,11 +30,5 @@ center: [-114.577507, 45.547090],
 zoom: 5.3
 });
 </script>
-  <!-- Add the Leaflet JavaScript library -->
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-  <script>
-    // Add MapBox tile layer to map element
-          L.tileLayer('https://api.mapbox.com/styles/v1/burkr/cjrtiidap18tq1gqe3qtent1s.html?fresh=true&title=true&access_token=pk.eyJ1IjoiYnVya3IiLCJhIjoiY2pyM3o2bDQ5MDIxNzRhbTMyeWRsb2RldiJ9.q8kfMI-VtINfQSIwUkxczg#5.3/45.547090/-114.577507/0) { attribution: 'MapBox and Cali Terrain by AMY LEE WALTON' }.addTo(map);
-</script>
-  </body>
+   </body>
 </html>
