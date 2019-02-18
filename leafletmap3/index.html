@@ -10,9 +10,9 @@
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
   <script>
     // Add MapBox tile layer to map element
-L.tileLayer ('https://api.mapbox.com/styles/v1/burkr/cjrtiidap18tq1gqe3qtent1s.html?fresh=true&title=true&access_token=pk.eyJ1IjoiYnVya3IiLCJhIjoiY2pyM3o2bDQ5MDIxNzRhbTMyeWRsb2RldiJ9.q8kfMI-VtINfQSIwUkxczg#5.4/44.137280/-117.906363/0)) { attribution: 'MapBox and Cali Terrain by AMY LEE WALTON' }.addTo(map);
+L.tileLayer ('<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />')) { attribution: 'MapBox and Cali Terrain by AMY LEE WALTON' }.addTo(map);
 </script>
-  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script> 
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
   <style>
 body { margin:0; padding:0; }
@@ -24,10 +24,10 @@ body { margin:0; padding:0; }
     <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiYnVya3IiLCJhIjoiY2pyM3o2bDQ5MDIxNzRhbTMyeWRsb2RldiJ9.q8kfMI-VtINfQSIwUkxczg';
 const map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/burkr/cjrtiidap18tq1gqe3qtent1s',
-center: [-114.577507, 45.547090],
-zoom: 5.3
+  container: 'map',
+  style: 'mapbox://styles/burkr/cjrtiidap18tq1gqe3qtent1s',
+  center: [-117.906363, 44.137280],
+  zoom: 5.4
 });
 </script>
    </body>
